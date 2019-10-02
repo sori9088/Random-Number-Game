@@ -1,0 +1,28 @@
+body{
+    background-color: #F2BD1D;
+}
+.container {
+    width: 60%;
+    border: 5px solid #F2A81D;
+    background-color: #9ACDD9;
+    margin: 100px;
+}
+.alert {
+    width:30%; 
+    margin: auto; 
+ }
+
+ .input {
+     margin : 30px;
+ }
+
+ h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: black;
+    text-shadow: -1px 1px 0 #F2A81D, 
+                          1px 1px 0 #F2A81D, 
+                         1px -1px 0 #F2A81D; 
+                        -1px -1px 0 #F2A81D;
+    font-size : 60px;
+
+}

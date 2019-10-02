@@ -7,23 +7,27 @@
     <title>NUMBER GUESSING GAME</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="container text-center mx-auto mt-5 py-5">
             <h1 class="top mx-auto mt-5 py-5">N u m b e r  G u e s s i n g  G a m e !</h1>
             <section class="d-flex justify-content-center list-inline">
-                <div class="input"><input type="number" id="guessNum">
-                    <button id="guessbtn" onclick="guess()">Guess!</button>
+                <div class="input">
+                    <input type="number" id="guessNum" class="form-control-lg" >
+                    <button id="guessbtn" class="btn-lg btn-warning" onclick="guess()">Guess</button>
                 </div>
             </section>
             <div class="output">
-                    <span id="guesses"> Number of attempts ( 5 chances ) </span><br>
-                    <span id="history"></span><br>
-                    <span id="result"></span><br>
-                    <span id="string"></span></div><br>
-                    <button onclick="location.reload()">Retry</button>
+                    <div class="alert alert-warning text-center" id="alert" role="alert">
+                            Let's Start it !
+                    </div>
+                    <div id="timer" class="display-4 mt-3 py-3">Ready, Start!</div>
+                    <h4 id="guesses" class="mt-2 py-2"> Remaining Guesses ( 10 chances ) </h4>
+                    <h4 id="history"></h4><br>
+                    <h3 id="string"></h3></div><br>
+                    <button onclick="location.reload()" class="btn btn-dark">Retry</button>
             
     </div>
     
