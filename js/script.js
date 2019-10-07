@@ -1,6 +1,7 @@
 let random = Math.floor(Math.random()*100+1);
 let count = 9;
 let history = [];
+let lastgame = [];
 console.log(random);
 
 function guess() {
